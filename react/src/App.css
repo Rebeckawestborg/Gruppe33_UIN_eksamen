@@ -1,0 +1,37 @@
+table{
+  border-collapse: collapse;
+  width: 100%;
+
+  td, th {
+    border: 1px solid var(--border);
+    padding: 8px;
+    text-align: left;
+    }
+}
+
+.bachelor-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.bachelor-card {
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 250px;
+  border: 1px solid var(--border);
+  padding: 20px;
+  border-radius: 8px;
+  background-color: var(--card-bg, #f5f5f5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bachelor-card h2 {
+  margin-top: 0;
+}
+
+.bachelor-card button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
